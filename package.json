@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server",
-    "dev": "nodemon server",
+    "dev": "nodemon server.js",
     "build":"npm i"
   },
   "author": "",
@@ -19,10 +19,6 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
-  },
-  "description": "travel gedeo website ",
-  "repository": {
-    "type": "git",
-    "url": "travelGedeo"
   }
+ 
 }
