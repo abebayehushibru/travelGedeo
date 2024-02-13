@@ -1,0 +1,86 @@
+ .contactContainer{
+    margin: 2rem 6rem;
+width: calc(100% - 12rem);
+
+ }
+ .contactContainer h3{
+    padding: 0 0 1rem ;
+    font-size: 1.3rem;
+    width: 100%;
+ }
+ .formcomponent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+margin-bottom: 30px;
+width: 100%;
+
+
+}
+
+.formcomponent >div{
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+   margin: 0%;
+    justify-content: space-around;
+}
+.formcomponent >div:nth-child(1){
+    display: grid;
+scroll-behavior: auto;
+    grid-template-columns: 45% 45%;
+}
+.formcomponent input{
+    outline: 1pX solid rgb(0, 0, 0,0.1);
+    height: 40px;
+  
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    margin: 0%;
+    margin-bottom: 15px;
+
+}
+
+.formcomponent >div:nth-child(2) input{
+    position: relative;
+   width: 90%;
+}
+.formcomponent input:focus,.formcomponent textarea:focus{
+    outline: 1px #01959a;
+   outline-style: solid;
+   outline-width: 1px;
+   box-shadow: .5px 1px 3px #01959a;
+   
+}
+.formcomponent:has(div input:focus) >p ,.formcomponent:has(div textarea:focus)>p{
+   content: "";
+}
+.formcomponent textarea{
+    max-width:90%;
+    min-width: 90%;
+    min-height: 100px;
+    max-height: auto;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    margin-bottom: 6px;
+    padding-top: 20px;
+    outline: solid rgb(0, 0, 0,0.1);
+}
+@media screen and (max-width:850px)  {
+    .contactContainer{
+        margin: 2rem 2rem;
+    width: calc(100% - 4rem);
+    
+     }
+    .formcomponent >div:nth-child(1){
+        grid-template-columns: 95%;
+    }
+    .formcomponent >div{
+       
+        max-width: 400px;}
+} 

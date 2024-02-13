@@ -1,0 +1,126 @@
+
+
+.navbarItems{
+ position: fixed;
+
+    display: flex;
+    height:60px;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: rgba(255, 255, 255);
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+ 
+   opacity: 1;
+   transition: all 2s ease-in-out;
+    
+}
+
+nav.moveup{
+
+    top: -60px;
+  
+}
+.nav-logo{
+    color: #000000;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-menu{
+   
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 15px;
+list-style: none;
+transition: all .5 ease-in-out;
+   
+}
+.nav-menu.active{
+   
+    opacity: 1;
+    left:0%;
+    z-index: 1;
+}
+.nav-link.active{ 
+    background-color: #01959a;
+    border-radius: 5px;
+    color: #fff;   
+}
+
+.nav-link{
+   
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.0rem;
+    font-weight: 600px;
+    white-space: nowrap;
+    padding: 0.4rem .7rem;
+}
+.nav-link i{
+    padding-right: 10px;
+}
+.nav-link:hover{
+    background-color: #01959a;
+    border-radius: 5px;
+    color: #fff;
+    transition: All .2s ease-in-out;
+}
+.not-admin{
+display: none;
+}
+.menu-btns{
+    display: none;
+   
+}
+.menu-btns i{
+    font-size: 2rem;
+    
+}
+
+
+@media screen and (max-width:800px){
+    .navbarItems{
+    
+        z-index: 1;
+   
+       
+    }
+    .nav-menu {
+        position: absolute;
+        background-color: #01959a;
+        top: 0%;
+        left:-100%;
+       margin:0;  
+        width: 100%;
+        overflow: hidden;
+        opacity:0 ;
+        top: 60px ;
+        align-items: stretch;
+        justify-content: flex-start;
+        display: flex;
+        z-index: -1;
+        flex-direction: column;
+        background-color: transparent;
+        transition: all .5s ease-in-out;
+        background: #fff;
+    }
+    
+   
+    .nav-link{
+      
+        display: block;
+        
+        font-size: 1.2rem;
+        padding: 2rem 0;
+        border-radius: 0;
+      
+    }
+    .menu-btns{
+        display: block;
+    }
+    
+}
