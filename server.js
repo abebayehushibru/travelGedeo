@@ -9,7 +9,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use('/images',express.static('images'))
-
+/*
+ host: process.env.DB_HOST, 
+    user: process.env.DB_USERNAME, 
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_DBNAME,
+    waitForConnections: true,
+    connectionLimit: 10,
+*/
 
 
  
